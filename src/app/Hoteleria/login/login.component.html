@@ -1,0 +1,31 @@
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+    <img src="../../../assets/Hoteleria/hotel.svg" width="30" height="30" alt="" loading="lazy">
+    </a>
+</nav>
+<div class="container">
+    <h3 style="text-align: center;">Inicio de Sesión</h3>
+    <div>
+        <form class="form-group">
+            <label for="nick">
+                Nickname/Correo:
+            </label>
+            <br/>
+            <input type="text email" id="nick" [formControl]="nickName">
+            <br/>
+            <label for="pass">
+                Contraseña:
+            </label>
+            <br/>
+            <input type="password" id="pass" [formControl]="password">
+            <br/>
+        </form>
+    </div>
+    <div>
+        <button type="button" class="btn btn-success" (click)="logIn()">Iniciar Sesión</button>
+        <p>{{estado}}</p>
+    </div>
+    <div>
+        <button type="button" class="btn btn-info" (click)="NavegaToHome()">Home</button>
+    </div>
+</div>

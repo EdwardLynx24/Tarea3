@@ -1,0 +1,74 @@
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+    <img src="../../../assets/Hoteleria/hotel.svg" width="30" height="30" alt="" loading="lazy">
+    </a>
+</nav>
+<h3 style="text-align: center;">Registro de Usuario</h3>
+<div class="container" style="padding-top: 3rem;">
+    <div>
+        <label>
+            Nombre:
+        </label>
+        <br/>
+        <input type="text" [formControl]="nombres">
+        <br/>
+        <label>
+            Apellidos:
+        </label>
+        <br/>
+        <input class="col-sm-4" type="text" [formControl]="apellidos">
+        <br/>
+        <label>
+            Edad:
+        </label>
+        <br/>
+        <input class="col-sm-4" type="text" [formControl]="edad">
+        <br/>
+        <label>
+            Correo:
+        </label>
+        <br/>
+        <input class="col-sm-4" type="email" [formControl]="correo">
+        <br/>
+        <label>
+            Nickname:
+        </label>
+        <br/>
+        <input class="col-sm-4" type="text" [formControl]="nickname">
+        <br/>
+        <label>
+            Contraseña:
+        </label>
+        <br/>
+        <input class="col-sm-4" type="password" [formControl]="password">
+        <br/>
+        <label>
+            Numero de Tarjeta de Credito:
+        </label>
+        <br/>
+        <input class="col-sm-4" type="text" [formControl]="nCreditCard">
+        <br/>
+        <label>
+            Contraseña de la Tarjeta de Credito:
+        </label>
+        <br/>
+        <input class="col-sm-4" type="password" [formControl]="passCredit">
+        <br/>
+        <label>
+            Fecha de Vencimiento:
+        </label>
+        <br/>
+        <input class="col-sm-4" type="date" [formControl]="fecha">
+        <br/>
+    </div>
+    <br/>
+    <div>
+        <button type="button" class="btn btn-success" (click)="Guardar()">Registrar</button>
+    </div>
+    <div>
+        <p>{{texto}}</p>
+    </div>
+    <div>
+        <button type="button" class="btn btn-info" (click)="NavegaToHome()">Home</button>
+    </div>
+</div>

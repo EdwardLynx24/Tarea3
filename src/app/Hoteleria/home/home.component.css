@@ -1,0 +1,11 @@
+.log{
+    width: 6rem;
+    height: 3rem;
+}
+.navbg{
+    background: rgb(34,193,195);
+    background: -moz-linear-gradient(0deg, rgba(34,193,195,0.7063200280112045) 0%, rgba(45,253,48,0.7791491596638656) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(34,193,195,0.7063200280112045) 0%, rgba(45,253,48,0.7791491596638656) 100%);
+    background: linear-gradient(0deg, rgba(34,193,195,0.7063200280112045) 0%, rgba(45,253,48,0.7791491596638656) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22c1c3",endColorstr="#2dfd30",GradientType=1);
+}
