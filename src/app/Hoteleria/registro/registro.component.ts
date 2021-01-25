@@ -1,6 +1,6 @@
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-registro',
@@ -9,20 +9,18 @@ import { FormControl } from '@angular/forms';
 })
 export class RegistroComponent implements OnInit {
 
-  nombres = new FormControl('');
-  apellidos = new FormControl('');
-  edad = new FormControl('');
-  correo = new FormControl('');
-  nickname = new FormControl('');
-  password = new FormControl('');
-  nCreditCard = new FormControl('');
-  passCredit = new FormControl('');
-  fecha = new FormControl('');
-  texto: String;
-
-
-  constructor(private router: Router) { }
-
+  texto:String
+    nombres = new FormControl('');
+    apellidos = new FormControl('');
+    edad = new FormControl('');
+    correo = new FormControl('');
+    nickname = new FormControl('');
+    password = new FormControl('');
+    nCreditCard = new FormControl('');
+    passCredit = new FormControl('');
+    fecha = new FormControl('');
+  
+  constructor(private router: Router, private fb: FormBuilder) { }
   ngOnInit(): void {
   }
   NavegaToHome():void{
@@ -30,5 +28,7 @@ export class RegistroComponent implements OnInit {
   }
   Guardar():void{
     this.texto = "Datos Guardados"
+  }
+  onSubmit() {
   }
 }
