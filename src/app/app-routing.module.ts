@@ -1,3 +1,4 @@
+import { SplashComponent } from './Hoteleria/splash/splash.component';
 import { ConocenosComponent } from './Hoteleria/conocenos/conocenos.component';
 import { LoginComponent } from './Hoteleria/login/login.component';
 import { RegistroComponent } from './Hoteleria/registro/registro.component';
@@ -8,7 +9,8 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
 
-  {path: '', component: HomeComponent},
+  {path: '', component: SplashComponent},
+  {path: 'home', component: HomeComponent},
   {path: 'registro', component: RegistroComponent},
   {path: 'login', component: LoginComponent},
   {path: 'conocenos', component: ConocenosComponent},

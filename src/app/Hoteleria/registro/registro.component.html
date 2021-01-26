@@ -1,53 +1,56 @@
-<nav class="navbar navbar-light bg-light">
-    <a class="navbar-brand" href="#">
-    <img src="../../../assets/Hoteleria/hotel.svg" width="30" height="30" alt="" loading="lazy">
-    </a>
-</nav>
-<h3 style="text-align: center;">Registro de Usuario</h3>
-<div class="container" style="padding-top: 3rem;">
-    <div>
-        <form (ngSubmit)="onSubmit()">
-            <label>
-                Nombre:
-                <input class="form-control" type="text" [formControl]="nombres" placeholder="Ingresa tu nombre" required>
-                Nombre: <b>{{nombres.value}}</b>
-            </label><br/>
-            <label>
+<app-home></app-home>
+<div style="padding-top: 1rem;" class="container">
+    <h5>Datos Personales.</h5>
+        <form class="row">
+            <label class="col-sm-3" for="name">
+                Nombre/s:
+                <input type="text" id="name" class="form-control" formControlName="nombres" placeholder="Ingresa tu nombre" required>
+                <p> {{nombres.value}} </p>
+               </label>
+            <label class="col-sm-3" for="ape">
                 Apellidos:
-                <input class="form-control" type="text" [formControl]="apellidos" placeholder="Ingresa tus apellidos">
-                Apellidos: <b>{{apellidos.value}}</b>
-            </label><br/>
-            <label>
+                <input type="text" id="ape" class="form-control" formControlName="apellidos" placeholder="Ingresa tus apellidos" required>
+            </label>
+            <label class="col-sm-3" for="age">
                 Edad:
-                <input class="form-control" type="text" [formControl]="edad" placeholder="Ingresa tu edad">
-                Edad: <b>{{edad.value}}</b>
-            </label><br/>
-            <label>
-                Correo:
-                <input class="form-control" type="email" [formControl]="correo" placeholder="Ingresa tu correo">
-                Correo: <b>{{correo.value}}</b>
-            </label><br/>
-            <label>
-                Nickname:
-                <input class="form-control" type="text" [formControl]="nickname" placeholder="Ingresa tu nickname">
-                Nickname: <b>{{nickname.value}}</b>
-            </label><br/>
-            <label>
-                Contraseña:
-                <input class="form-control" type="password" [formControl]="password" placeholder="Ingresa tu contraseña">
-            </label><br/>
+                <input type="text" id="age" class="form-control" formControlName="edad" placeholder="Ingresa tu edad" required>
+            </label>
         </form>
-    </div>
-    <br/>
-    <form>
-        <div>
-            <button class="btn btn-success" type="submit" (click)="Guardar()">Registrar</button>
-        </div>
-        <div>
-            <p>{{texto}}</p>
-        </div>
-        <div>
-            <button type="button" class="btn btn-info" (click)="NavegaToHome()">Home</button>
-        </div>
-    </form>
+        <h5>Datos de Usuario.</h5>
+        <form class="row">
+            <label for="mai" class="col-sm-3">
+                Correo:
+                <input type="email" id="mai" class="form-control" formControlName="correo" placeholder="Ingresa tu Email" required>
+            </label>
+            <label class="col-sm-3" for="nick">
+                Nickname:
+                <input type="text" id="nick" class="form-control" formControlName="nickname" placeholder="Ingresa tu usuario" required>
+            </label>
+            <label class="col-sm-3" for="pass">
+                Contraseña:
+                <input type="password" id="pass" class="form-control" formControlName="password" placeholder="Ingresa tu contraseña" required>
+            </label>
+        </form>
+        <h5>Datos Bancarios.</h5>
+        <form class="row">
+            <label for="number" class="col-sm-3">
+                #Tarjeta:
+                <input type="text" id="number" class="form-control" formControlName="nCreditCard" placeholder="Numero de tarjeta">
+            </label>
+            <label for="passw" class="col-sm-3">
+                NIP:
+                <input type="password" id="passw" class="form-control" formControlName="passCredit" placeholder="Nip de tarjeta">
+            </label>
+        </form>
+        <h5>Reservación.</h5>
+        <form class="row">
+            <label for="date" class="col-sm-3">
+                Fecha:
+                <input type="date" id="date" class="form-control" formControlName="fecha">
+            </label>
+        </form>
+        <br/>
+    <button type="submit" class="btn btn-warning" (click)="Guardar()">Registrar</button>
+    <br/><br/>
+    <button type="button" class="btn btn-info" (click)="NavegaToHome()">Inicio</button>
 </div>

@@ -1,0 +1,10 @@
+.splash{
+    background: rgb(93,243,245);
+    background: linear-gradient(0deg, rgba(93,243,245,0.7063200280112045) 100%, rgba(118,255,251,0.7791491596638656) 100%);
+}
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

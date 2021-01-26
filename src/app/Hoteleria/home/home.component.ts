@@ -21,4 +21,7 @@ export class HomeComponent implements OnInit {
   NavegaToMeet():void{
     this.router.navigate(['/conocenos'])
   }
+    NavegaToHome():void{
+    this.router.navigate([''])
+  }
 }

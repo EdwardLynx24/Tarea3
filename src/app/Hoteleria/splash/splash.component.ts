@@ -2,17 +2,17 @@ import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-conocenos',
-  templateUrl: './conocenos.component.html',
-  styleUrls: ['./conocenos.component.css']
+  selector: 'app-splash',
+  templateUrl: './splash.component.html',
+  styleUrls: ['./splash.component.css']
 })
-export class ConocenosComponent implements OnInit {
+export class SplashComponent implements OnInit {
 
   constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
   NavegaToHome():void{
-    this.router.navigate(['/home'])
+    this.router.navigate(['home'])
   }
 }

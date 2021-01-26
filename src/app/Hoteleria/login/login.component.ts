@@ -20,6 +20,6 @@ export class LoginComponent implements OnInit {
     this.estado="Inicio de sesión exitoso"
   }
   NavegaToHome():void{
-    this.router.navigate(['']);
+    this.router.navigate(['/home']);
   }
 }

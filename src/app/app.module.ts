@@ -9,6 +9,7 @@ import { Page404Component } from './Hoteleria/page404/page404.component';
 import { RegistroComponent } from './Hoteleria/registro/registro.component';
 import { LoginComponent } from './Hoteleria/login/login.component';
 import { ConocenosComponent } from './Hoteleria/conocenos/conocenos.component';
+import { SplashComponent } from './Hoteleria/splash/splash.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ConocenosComponent } from './Hoteleria/conocenos/conocenos.component';
     Page404Component,
     RegistroComponent,
     LoginComponent,
-    ConocenosComponent
+    ConocenosComponent,
+    SplashComponent
   ],
   imports: [
     BrowserModule,
