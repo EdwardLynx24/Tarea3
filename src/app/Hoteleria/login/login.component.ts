@@ -1,5 +1,5 @@
 import { Router } from '@angular/router';
-import { FormControl } from '@angular/forms';
+import { FormControl, FormGroup } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -12,6 +12,12 @@ export class LoginComponent implements OnInit {
   nickName = new FormControl('');
   password = new FormControl('');
   estado: String;
+
+  login = new FormGroup({
+    nickName:this.nickName,
+    password:this.password
+  });
+
   constructor(private router: Router) { }
 
   ngOnInit(): void {
